@@ -4,7 +4,7 @@ Collects checkins from scripts (e.g. backups), and provides status endpoints ret
 
 Install: `go install github.com/andreyvit/watchdogd@latest`
 
-Run: `watchdogd -f /var/run/watchdogd.json -t SECRET -l :8080`
+Run: `watchdogd -f /var/lib/watchdogd.json -t SECRET -l :8080`
 
 Checkin: `curl -X POST -H 'Authentication: Bearer SECRET' http://127.0.0.1:8080/backups-24h`
 
