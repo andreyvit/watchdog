@@ -2,7 +2,7 @@
 
 Collects checkins from scripts (e.g. backups), and provides status endpoints returning OKAY if checkin happened within the last N hours, which you can monitor via updown.io or similar.
 
-Install: `go install github.com/andreyvit/watchdogd`
+Install: `go install github.com/andreyvit/watchdogd@latest`
 
 Run: `watchdogd -f /var/run/watchdogd.json -t SECRET -l :8080`
 
